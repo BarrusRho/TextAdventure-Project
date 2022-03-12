@@ -11,6 +11,7 @@ namespace TextAdventure
         public TMP_InputField textEntryField;
         public TMP_Text historyText;
         public TMP_Text currentText;
+        public Action[] actions;
 
         [TextArea]
         public string introText;
@@ -53,6 +54,21 @@ namespace TextAdventure
             char[] delimiter = {' '};
             string[] separatedWords = input.Split(delimiter);
 
+            foreach (Action action in actions)
+            {
+                if (action.keyword == separatedWords[0])
+                {
+                    if (separatedWords.Length < 1)
+                    {
+                    action.RespondToInput(this, separatedWords[1]);
+                    }
+                    else
+                    {
+                        action.RespondToInput(this, "");
+                    }
+                    return;
+                }
+            }
             currentText.text = $"Nothing happens! Having trouble? Type Help";
         }
     }
