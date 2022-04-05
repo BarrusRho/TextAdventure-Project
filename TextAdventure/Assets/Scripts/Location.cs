@@ -11,6 +11,7 @@ namespace TextAdventure
         [TextArea]
         public string description;
         public Connection[] connections;
+        public List<Item> items = new List<Item>();
 
         public string GetConnectionsText()
         {
@@ -36,6 +37,27 @@ namespace TextAdventure
                 }
             }
             return null;
+        }
+
+        public string GetItemsText()
+        {
+            if (items.Count == 0)
+            {
+                return $"";
+            }
+            string result = $"You see ";
+            bool first = true;
+            foreach (Item item in items)
+            {
+                if (first == false)
+                {
+                    result += $" and ";
+                }
+                result += $"{item.itemDescription}";
+                first = false;
+            }
+            result += $"\n";
+            return result;
         }
     }
 }

@@ -7,6 +7,7 @@ namespace TextAdventure
     public class Player : MonoBehaviour
     {
         public Location currentLocation;
+        public List<Item> inventory = new List<Item>();
 
         public bool CanChangeLocation(GameController controller, string connectionNoun)
         {

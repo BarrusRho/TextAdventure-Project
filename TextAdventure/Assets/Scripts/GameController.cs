@@ -27,12 +27,13 @@ namespace TextAdventure
         {
             string description = $"{player.currentLocation.description}\n";
             description += $"{player.currentLocation.GetConnectionsText()}";
+            description += $"{player.currentLocation.GetItemsText()}";
             currentText.text = $"{description}";
         }
 
         public void TextEntered()
         {
-            Debug.Log($"Text entered");
+            Debug.Log($"Text entered");          
             LogCurrentText();
             ProcessInput(textEntryField.text);
             textEntryField.text = $"";

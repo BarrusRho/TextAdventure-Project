@@ -190,6 +190,7 @@ MonoBehaviour:
     description: There is an antechamber to the west.
     location: {fileID: 1951638926}
     isConnectionEnabled: 1
+  items: []
 --- !u!1 &154355372
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,6 +377,7 @@ MonoBehaviour:
     description: The south returns to the chapel.
     location: {fileID: 151017764}
     isConnectionEnabled: 1
+  items: []
 --- !u!1 &270253991
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,7 +408,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 762008856}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -473,7 +475,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -566,6 +568,7 @@ MonoBehaviour:
     description: To the west is the island.
     location: {fileID: 1422974279}
     isConnectionEnabled: 1
+  items: []
 --- !u!1 &367412491
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,6 +620,7 @@ MonoBehaviour:
     description: West returns to the Chapel knave.
     location: {fileID: 151017764}
     isConnectionEnabled: 1
+  items: []
 --- !u!1 &415269682
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,6 +651,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLocation: {fileID: 1422974279}
+  inventory:
+  - {fileID: 524325518}
 --- !u!4 &415269684
 Transform:
   m_ObjectHideFlags: 0
@@ -744,6 +750,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &524325516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 524325517}
+  - component: {fileID: 524325518}
+  m_Layer: 0
+  m_Name: Staff
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &524325517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524325516}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 625958588}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &524325518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524325516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88ae8de6a51ee8478758c47aac62a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: staff
+  itemDescription: a staff
+  canPlayerTakeItem: 1
+  isItemEnabled: 1
 --- !u!1 &607443956
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,6 +952,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607443956}
   m_CullTransparentMesh: 1
+--- !u!1 &625958587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 625958588}
+  m_Layer: 0
+  m_Name: Items
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &625958588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625958587}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 524325517}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &752925594
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,6 +1032,7 @@ MonoBehaviour:
     ghost land and then turn to face a wall of fog as you drift silently into the
     unknown."
   connections: []
+  items: []
 --- !u!1 &760183458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,8 +1122,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 270253992}
   - {fileID: 2064853536}
+  - {fileID: 270253992}
   m_Father: {fileID: 776375183}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1318,7 +1403,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1424,6 +1509,7 @@ MonoBehaviour:
     description: To the north is the rest of the Island.
     location: {fileID: 1422974279}
     isConnectionEnabled: 1
+  items: []
 --- !u!1 &1120786425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1521,6 +1607,7 @@ MonoBehaviour:
     description: To the south is the island.
     location: {fileID: 1422974279}
     isConnectionEnabled: 1
+  items: []
 --- !u!1 &1155676685
 GameObject:
   m_ObjectHideFlags: 0
@@ -1843,6 +1930,7 @@ MonoBehaviour:
     description: To the west lies a shore.
     location: {fileID: 1531825142}
     isConnectionEnabled: 1
+  items: []
 --- !u!1 &1442516943
 GameObject:
   m_ObjectHideFlags: 0
@@ -1900,6 +1988,7 @@ MonoBehaviour:
     description: The wooden bridge leads south over the sea.
     location: {fileID: 1151623702}
     isConnectionEnabled: 1
+  items: []
 --- !u!1 &1531825140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1951,6 +2040,7 @@ MonoBehaviour:
     description: To the east is the island.
     location: {fileID: 1422974279}
     isConnectionEnabled: 1
+  items: []
 --- !u!1 &1737888978
 GameObject:
   m_ObjectHideFlags: 0
@@ -2219,6 +2309,7 @@ MonoBehaviour:
     description: East returns to the Chapel knave.
     location: {fileID: 151017764}
     isConnectionEnabled: 1
+  items: []
 --- !u!1 &2064853535
 GameObject:
   m_ObjectHideFlags: 0
@@ -2251,7 +2342,7 @@ RectTransform:
   m_Children:
   - {fileID: 907224429}
   m_Father: {fileID: 762008856}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
