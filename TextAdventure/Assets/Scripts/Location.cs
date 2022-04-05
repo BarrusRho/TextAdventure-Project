@@ -45,16 +45,19 @@ namespace TextAdventure
             {
                 return $"";
             }
-            string result = $"You see ";
+            var result = $"You see ";
             bool first = true;
             foreach (Item item in items)
             {
-                if (first == false)
+                if (item.isItemEnabled == true)
                 {
-                    result += $" and ";
+                    if (first == false)
+                    {
+                        result += $" and ";
+                    }
+                    result += $"{item.itemDescription}";
+                    first = false;
                 }
-                result += $"{item.itemDescription}";
-                first = false;
             }
             result += $"\n";
             return result;

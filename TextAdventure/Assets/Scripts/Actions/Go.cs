@@ -7,9 +7,9 @@ namespace TextAdventure
     [CreateAssetMenu(menuName = "Actions/Go")]
     public class Go : Action
     {
-        public override void RespondToInput(GameController controller, string verb)
+        public override void RespondToInput(GameController controller, string noun)
         {
-            if (controller.player.CanChangeLocation(controller, verb) == true)
+            if (controller.player.CanChangeLocation(controller, noun) == true)
             {
                 controller.DisplayLocation();
             }
