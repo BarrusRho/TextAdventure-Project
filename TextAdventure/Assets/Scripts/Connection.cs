@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace TextAdventure
-{
-    [System.Serializable]
-    public class Connection
+{    
+    public class Connection : MonoBehaviour
     {
         public string connectionName;
+
+        [TextArea]
         public string description;
         public Location location;
         public bool isConnectionEnabled;

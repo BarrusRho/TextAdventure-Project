@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -39,6 +40,7 @@ namespace TextAdventure
             return null;
         }
 
+
         public string GetItemsText()
         {
             if (items.Count == 0)
@@ -61,6 +63,18 @@ namespace TextAdventure
             }
             result += $"\n";
             return result;
+        }
+
+        internal bool HasItem(Item itemToCheck)
+        {
+            foreach(Item item in items)
+            {
+                if (item == itemToCheck)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }
