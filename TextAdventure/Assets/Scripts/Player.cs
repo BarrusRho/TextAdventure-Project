@@ -30,11 +30,11 @@ namespace TextAdventure
             {
                 return true;
             }
-            if (HasItem(item) == true)
+            if (HasItem(item.targetItem) == true)
             {
                 return true;
             }
-            if (currentLocation.HasItem(item) == true)
+            if (currentLocation.HasItem(item.targetItem) == true)
             {
                 return true;
             }
@@ -46,7 +46,7 @@ namespace TextAdventure
         {
             foreach (Item item in inventory)
             {
-                if (item == itemToCheck)
+                if (item == itemToCheck && item.isItemEnabled == true)
                 {
                     return true;
                 }

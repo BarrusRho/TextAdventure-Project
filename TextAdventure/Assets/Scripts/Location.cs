@@ -69,7 +69,7 @@ namespace TextAdventure
         {
             foreach(Item item in items)
             {
-                if (item == itemToCheck)
+                if (item == itemToCheck && item.isItemEnabled == true)
                 {
                     return true;
                 }

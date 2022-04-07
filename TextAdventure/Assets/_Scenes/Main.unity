@@ -171,12 +171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locationName: Chapel
-  description: 'A dark ruined chapel. In the centre of a dark stone room a smashed
-    statue, the plinth and lower half of a robed figure. In front of the statue a
-    deep well is carved into the rock. You are drawn to it. Looking down the well
-    leads directly into the sea below, in the water you see piles of coins, some
-    black with age some sparkling gold and silver in the light. A shape swims through
-    the water. '
+  description: You see a dark ruined chapel. In the centre of a dark stone room a
+    smashed statue, the plinth and lower half of a robed figure.
   connections:
   - {fileID: 1651223618}
   - {fileID: 1737950219}

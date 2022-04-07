@@ -41,6 +41,7 @@ namespace TextAdventure
                     }
 
                     controller.currentText.text = $"{interaction.response}";
+                    controller.DisplayLocation(true);
 
                     return true;
                 }

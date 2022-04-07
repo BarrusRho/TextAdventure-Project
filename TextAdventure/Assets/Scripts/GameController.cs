@@ -23,17 +23,25 @@ namespace TextAdventure
             textEntryField.ActivateInputField();
         }
 
-        public void DisplayLocation()
+        public void DisplayLocation(bool additive = false)
         {
             string description = $"{player.currentLocation.description}\n";
             description += $"{player.currentLocation.GetConnectionsText()}";
             description += $"{player.currentLocation.GetItemsText()}";
-            currentText.text = $"{description}";
+
+            if (additive == true)
+            {
+                currentText.text = $"{currentText.text} \n{description}";
+            }
+            else
+            {
+                currentText.text = $"{description}";
+            }
         }
 
         public void TextEntered()
         {
-            Debug.Log($"Text entered");          
+            Debug.Log($"Text entered");
             LogCurrentText();
             ProcessInput(textEntryField.text);
             textEntryField.text = $"";
