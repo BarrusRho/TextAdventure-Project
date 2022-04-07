@@ -993,7 +993,11 @@ MonoBehaviour:
     itemsToEnable:
     - {fileID: 204533058}
     connectionsToDisable: []
-    connectionsToEnable: []
+    connectionsToEnable:
+    - {fileID: 1651223618}
+    - {fileID: 1737950219}
+    - {fileID: 1005081965}
+    - {fileID: 690502537}
 --- !u!1 &607443956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,7 +1956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: serpent
   itemDescription: a serpent
-  canPlayerTakeItem: 1
+  canPlayerTakeItem: 0
   isItemEnabled: 0
   targetItem: {fileID: 0}
   interactions: []
@@ -2993,7 +2997,21 @@ MonoBehaviour:
   canPlayerTakeItem: 0
   isItemEnabled: 1
   targetItem: {fileID: 0}
-  interactions: []
+  interactions:
+  - action: {fileID: 11400000, guid: d480042e41efd9e42ba90374860354a7, type: 2}
+    response: Looking into the well you see nothing but two glowing eyes and then
+      rows of sparkling teeth rushing up to meet you. You fall back and a great serpent
+      bursts forth coiling itself round the well towering over you.
+    itemsToDisable:
+    - {fileID: 1573410457}
+    itemsToEnable:
+    - {fileID: 1032436402}
+    connectionsToDisable:
+    - {fileID: 1651223618}
+    - {fileID: 1737950219}
+    - {fileID: 1005081965}
+    - {fileID: 690502537}
+    connectionsToEnable: []
 --- !u!1 &1651223617
 GameObject:
   m_ObjectHideFlags: 0
@@ -3444,7 +3462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: tapestry
   itemDescription: a thread-worn tapestry
-  canPlayerTakeItem: 1
+  canPlayerTakeItem: 0
   isItemEnabled: 1
   targetItem: {fileID: 0}
   interactions: []
