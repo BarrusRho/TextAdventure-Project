@@ -53,5 +53,10 @@ namespace TextAdventure
             }
             return false;
         }
+
+        internal bool CanTalkToItem(GameController controller, Item item)
+        {
+            return item.canPlayerTalkTo;
+        }
     }
 }

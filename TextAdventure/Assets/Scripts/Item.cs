@@ -11,17 +11,22 @@ namespace TextAdventure
         [TextArea]
         public string itemDescription;
         public bool canPlayerTakeItem;
-        public bool isItemEnabled = true;        
+        public bool isItemEnabled = true;
+        public bool canPlayerTalkTo = false;
         public Item targetItem = null;
         public Interaction[] interactions;
 
 
-        public bool InteractWith(GameController controller, string actionKeyword)
+        public bool InteractWith(GameController controller, string actionKeyword, string noun = "")
         {
             foreach (Interaction interaction in interactions)
             {
                 if (interaction.action.keyword == actionKeyword)
                 {
+                    if (noun != "" && noun.ToLower() != interaction.textToMatch.ToLower())
+                    {
+                        continue;
+                    }
                     foreach (Item disableItem in interaction.itemsToDisable)
                     {
                         disableItem.isItemEnabled = false;

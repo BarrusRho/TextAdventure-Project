@@ -11,13 +11,11 @@ namespace TextAdventure
 
         [TextArea]
         public string response;
+        public string textToMatch;
 
         public List<Item> itemsToDisable = new List<Item>();
         public List<Item> itemsToEnable = new List<Item>();
         public List<Connection> connectionsToDisable = new List<Connection>();
         public List<Connection> connectionsToEnable = new List<Connection>();
-
-        
-
     }
 }
