@@ -13,6 +13,7 @@ namespace TextAdventure
         public bool canPlayerTakeItem;
         public bool isItemEnabled = true;
         public bool canPlayerTalkTo = false;
+        public bool canPlayerGiveTo = false;
         public Item targetItem = null;
         public Interaction[] interactions;
 
@@ -45,6 +46,11 @@ namespace TextAdventure
                         enableConnection.isConnectionEnabled = true;
                     }
 
+                    if ( interaction.teleportLocation != null)
+                    {
+                        controller.player.Teleport(controller, interaction.teleportLocation);
+                    }
+                    
                     controller.currentText.text = $"{interaction.response}";
                     controller.DisplayLocation(true);
 
