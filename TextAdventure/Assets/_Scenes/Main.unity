@@ -466,7 +466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: South
-  description: To the south is the island.
+  description: To the <b>south</b> is the island.
   location: {fileID: 1422974279}
   isConnectionEnabled: 1
 --- !u!1 &270253991
@@ -799,8 +799,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: North
-  description: Steps snake northward, high up the rock face leading to a dark cave
-    entrance.
+  description: Steps snake to the <b>north</b>, high up the rock face leading to
+    a dark cave entrance.
   location: {fileID: 151017764}
   isConnectionEnabled: 1
 --- !u!1 &433228517
@@ -833,7 +833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: East
-  description: To the east is the island.
+  description: To the <b>east</b> is the island.
   location: {fileID: 1422974279}
   isConnectionEnabled: 1
 --- !u!4 &433228519
@@ -1294,7 +1294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: West
-  description: There is an antechamber to the west.
+  description: There is an antechamber to the <b>west</b>.
   location: {fileID: 1951638926}
   isConnectionEnabled: 1
 --- !u!4 &690502538
@@ -1529,7 +1529,7 @@ RectTransform:
   - {fileID: 2064853536}
   - {fileID: 270253992}
   m_Father: {fileID: 776375183}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1666,8 +1666,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 154355373}
-  - {fileID: 1737888979}
   - {fileID: 762008856}
+  - {fileID: 1737888979}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1907,8 +1907,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: North
-  description: Peering north across the sea to a dark shape hovers on the edge of
-    sight.
+  description: Peering <b>north</b> across the sea to a dark shape hovers on the
+    edge of sight.
   location: {fileID: 1442516945}
   isConnectionEnabled: 1
 --- !u!1 &967658875
@@ -1941,7 +1941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: South
-  description: The chapel lies to the south
+  description: The chapel lies to the <b>south</b>
   location: {fileID: 151017764}
   isConnectionEnabled: 1
 --- !u!4 &967658877
@@ -2002,7 +2002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: East
-  description: There is an antechamber to the east.
+  description: There is an antechamber to the <b>east</b>.
   location: {fileID: 367412493}
   isConnectionEnabled: 1
 --- !u!1 &1011700292
@@ -2201,7 +2201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: West
-  description: West returns to the Chapel knave.
+  description: <b>West</b> returns to the Chapel knave.
   location: {fileID: 151017764}
   isConnectionEnabled: 1
 --- !u!1 &1108941105
@@ -2248,7 +2248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: South
-  description: To the south you see a large tree.
+  description: To the <b>south</b> you see a large tree.
   location: {fileID: 1011700294}
   isConnectionEnabled: 1
 --- !u!1 &1120786425
@@ -2388,7 +2388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: East
-  description: East returns to the Chapel knave.
+  description: <b>East</b> returns to the Chapel knave.
   location: {fileID: 151017764}
   isConnectionEnabled: 1
 --- !u!1 &1155676685
@@ -2659,7 +2659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: South
-  description: The wooden bridge leads south over the sea.
+  description: The wooden bridge leads <b>south</b> over the sea.
   location: {fileID: 1151623702}
   isConnectionEnabled: 1
 --- !u!1 &1358747744
@@ -2706,7 +2706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: West
-  description: To the west lies a shore.
+  description: To the <b>west</b> lies a shore.
   location: {fileID: 1531825142}
   isConnectionEnabled: 1
 --- !u!1 &1361330783
@@ -3008,7 +3008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: North
-  description: There is a beach to the north.
+  description: There is a beach to the <b>north</b>.
   location: {fileID: 1151623702}
   isConnectionEnabled: 1
 --- !u!1 &1531825140
@@ -3227,7 +3227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: North
-  description: To the north is a carved wooden door.
+  description: To the <b>north</b> is a carved wooden door.
   location: {fileID: 177566700}
   isConnectionEnabled: 1
 --- !u!4 &1651223619
@@ -3276,7 +3276,7 @@ RectTransform:
   m_Children:
   - {fileID: 2071907747}
   m_Father: {fileID: 776375183}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -3475,7 +3475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: South
-  description: To the south the steps snake down the cliff face to the shore.
+  description: To the <b>south</b> the steps snake down the cliff face to the shore.
   location: {fileID: 1442516945}
   isConnectionEnabled: 1
 --- !u!1 &1747454772
@@ -3522,7 +3522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: West
-  description: To the west is the island.
+  description: To the <b>west</b> is the island.
   location: {fileID: 1422974279}
   isConnectionEnabled: 1
 --- !u!1 &1748640319
@@ -3569,7 +3569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: East
-  description: To the east lies a shore.
+  description: To the <b>east</b> lies a shore.
   location: {fileID: 290687429}
   isConnectionEnabled: 1
 --- !u!1 &1804474502
@@ -3706,7 +3706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionName: North
-  description: To the north is the rest of the island
+  description: To the <b>north</b> is the rest of the island
   location: {fileID: 1422974279}
   isConnectionEnabled: 1
 --- !u!1 &1951638924
