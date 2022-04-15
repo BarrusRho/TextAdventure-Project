@@ -11,6 +11,7 @@ namespace TextAdventure
 
         [TextArea]
         public string description;
+        public Sprite locationImage;
         public Connection[] connections;
         public List<Item> items = new List<Item>();
 
@@ -26,6 +27,11 @@ namespace TextAdventure
                 }
             }
             return result;
+        }
+
+        public Sprite GetLocationImage()
+        {
+            return locationImage;
         }
 
         public Connection GetConnection(string connectionNoun)
@@ -67,7 +73,7 @@ namespace TextAdventure
 
         internal bool HasItem(Item itemToCheck)
         {
-            foreach(Item item in items)
+            foreach (Item item in items)
             {
                 if (item == itemToCheck && item.isItemEnabled == true)
                 {
