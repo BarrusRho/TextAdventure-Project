@@ -27,7 +27,7 @@ namespace TextAdventure
 
         public void DisplayLocation(bool additive = false)
         {
-            string description = $"{player.currentLocation.description}\n";
+            string description = $"{player.currentLocation.description}\n\n";
             description += $"{player.currentLocation.GetConnectionsText()}";
             description += $"{player.currentLocation.GetItemsText()}";
 
