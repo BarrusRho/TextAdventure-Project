@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 namespace TextAdventure
 {
@@ -11,6 +12,7 @@ namespace TextAdventure
         public TMP_InputField textEntryField;
         public TMP_Text historyText;
         public TMP_Text currentText;
+        public Image locationImage;
         public Action[] actions;
 
         [TextArea]
@@ -18,7 +20,7 @@ namespace TextAdventure
 
         private void Start()
         {
-            historyText.text = introText;
+            historyText.text = $"{introText}";
             DisplayLocation();
             textEntryField.ActivateInputField();
         }
@@ -28,6 +30,8 @@ namespace TextAdventure
             string description = $"{player.currentLocation.description}\n";
             description += $"{player.currentLocation.GetConnectionsText()}";
             description += $"{player.currentLocation.GetItemsText()}";
+            
+            locationImage.sprite = player.currentLocation.locationImage;
 
             if (additive == true)
             {
