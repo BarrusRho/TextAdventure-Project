@@ -29,6 +29,11 @@ namespace TextAdventure
             return result;
         }
 
+        public Sprite GetLocationImage()
+        {
+            return locationImage;
+        }
+
         public Connection GetConnection(string connectionNoun)
         {
             foreach (Connection connection in connections)
