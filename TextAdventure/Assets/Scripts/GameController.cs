@@ -22,7 +22,7 @@ namespace TextAdventure
         {
             historyText.text = $"{introText}";
             DisplayLocation();
-            textEntryField.ActivateInputField();
+            //textEntryField.ActivateInputField();
         }
 
         public void DisplayLocation(bool additive = false)
@@ -30,8 +30,8 @@ namespace TextAdventure
             string description = $"{player.currentLocation.description}\n";
             description += $"{player.currentLocation.GetConnectionsText()}";
             description += $"{player.currentLocation.GetItemsText()}";
-            
-            locationImage.sprite = player.currentLocation.locationImage;
+
+            locationImage.sprite = player.currentLocation.GetLocationImage();
 
             if (additive == true)
             {
@@ -49,8 +49,7 @@ namespace TextAdventure
             LogCurrentText();
             ProcessInput(textEntryField.text);
             textEntryField.text = $"";
-            textEntryField.ActivateInputField();
-
+            //textEntryField.ActivateInputField();
         }
 
         public void LogCurrentText()
